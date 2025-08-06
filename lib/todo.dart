@@ -14,7 +14,8 @@ class _ToDoAppState extends State<ToDoApp> {
     List<Map> taskList=[];
     return Scaffold(
       appBar: AppBar(
-        title: Text("ToDo App",style: TextStyle(fontSize: 20),),
+        leading: Icon(Icons.arrow_back),
+        title: Text("ToDo App",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
@@ -25,11 +26,10 @@ class _ToDoAppState extends State<ToDoApp> {
         padding: const EdgeInsets.all(15.0),
         child: CircleAvatar(
           child: Text("+",
-          style: TextStyle(fontSize: 25,color: Colors.black),)
-          ,backgroundColor:const Color.fromARGB(209, 122, 121, 121),
+          style: TextStyle(fontSize: 25,color: Colors.black)),
+          backgroundColor:const Color.fromARGB(209, 122, 121, 121),
         radius: 25,),
-        
-        
+       
       ),
       
       //bottomSheet: Column(
@@ -45,10 +45,6 @@ class _ToDoAppState extends State<ToDoApp> {
           //),
         //],
     //),
-
-      
-      
-      
     );
   }
 }
